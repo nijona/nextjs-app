@@ -26,8 +26,8 @@ jobs:
       - run: npm run build
       - run: npm run test
 
-      - name: test
-      - run: echo "This is a log message for Step 1"
+      - name: Step 1
+        run: echo "This is a log message for Step 1"
 
       - name: rsync deployments
         uses: burnett01/rsync-deployments@5.1
