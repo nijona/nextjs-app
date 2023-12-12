@@ -1,4 +1,5 @@
 const fs = require('fs');
+const path = require('path');
 
 function createJsonFile() {
   // Define the data to be written to the JSON file
