@@ -14,8 +14,10 @@ function createJsonFile() {
 
   // Write the JSON string to the file
   fs.writeFileSync(fileName, jsonString);
+  const fullPath = path.resolve(process.cwd(), fileName);
 
-  console.log(`JSON file "${fileName}" created successfully.`);
+
+  console.log(`JSON file "${fileName}" ${fullPath} created successfully.`);
 }
 
 // Call the function to create the JSON file
