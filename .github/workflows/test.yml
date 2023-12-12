@@ -35,4 +35,4 @@ jobs:
         remote_key: "${{ secrets.SSH_PRIVATE_KEY }}"
 
     - name: Set Environment Variable
-      run: echo "REMOTE_JSON_PATH=$(ssh -i ${{ secrets.SSH_PRIVATE_KEY }} ${{ secrets.SSH_SERVER }} 'readlink -f /var/www/nextjs-app/output.json')" >> $GITHUB_ENV
+      run: echo "REMOTE_JSON_PATH=$(ssh -i ${{ secrets.SSH_PRIVATE_KEY }} ec2-13-43-55-102.eu-west-2.compute.amazonaws.com 'readlink -f /var/www/nextjs-app/output.json')" >> $GITHUB_ENV
