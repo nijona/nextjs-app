@@ -22,7 +22,7 @@ jobs:
         node-version: '18'
 
     - name: Run custom script
-      run: npm run custom_script
+      run: npm run custom-script
     
     - name: rsync deployments
       uses: burnett01/rsync-deployments@5.1
