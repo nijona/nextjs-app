@@ -28,7 +28,7 @@ jobs:
       uses: burnett01/rsync-deployments@5.1
       with:
         switches: -avzr --delete
-        path: ./*output.json
+        path: /home/runner/work/nextjs-app/nextjs-app/output.json
         remote_path: /var/www/nextjs-app/
         remote_host: ec2-18-134-246-47.eu-west-2.compute.amazonaws.com
         remote_user: ubuntu
